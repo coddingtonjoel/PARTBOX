@@ -1,0 +1,30 @@
+.feature-container {
+    background: #263f44;
+}
+
+.features-row {
+    text-align: center;
+    padding: 10% 0;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.feat-head {
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-bottom: 6px;
+}
+
+.feature-icon {
+    font-size: 60px;
+    padding: 40px 10px;
+    transition: 0.55s;
+}
+
+.feature-icon:hover {
+    color: #ffd369;
+}
+
+.fa-exchange-alt {
+    font-size: 30px;
+}

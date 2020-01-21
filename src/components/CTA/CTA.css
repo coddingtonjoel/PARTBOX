@@ -1,0 +1,15 @@
+#cta {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 4%;
+}
+
+.email-form {
+    margin: 3% 33%;
+}
+
+.email-input {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}

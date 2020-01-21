@@ -1,0 +1,39 @@
+#testimonials {
+    text-align: center;
+    background: #ffd369;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.carousel-item {
+    padding: 7% 15%;
+}
+
+.test-head {
+    line-height: 1.5;
+    font-weight: 700;
+    font-size: 2.5rem;
+    padding: 0 100px;
+}
+
+/* Partners Section + Press Images */
+
+#press {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.press-img {
+    width: 120px;
+    margin: 20px 30px 10px;
+}
+
+.hyperx {
+    padding-top: 32px;
+}
+
+.partners-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: #2b474d;
+}

@@ -1,38 +1,127 @@
-.App {
-  text-align: center;
+body {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section-head {
+  font-size: 2.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.yellow-bg {
+  background: #ffd369;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.tan-bg {
+  background: #fff1cf;
+}
+
+/* Title Section */
+
+.container-fluid {
+  background-color: #015668;
+  padding: 0 5%;
+}
+
+#title {
+  padding: 5%;
+}
+
+.header-col {
+  padding-bottom: 50px;
+}
+
+.page-head {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.2rem;
+  line-height: 1.5;
   color: white;
+  margin-right: 10px;
+  font-weight: 700;
+  padding: 65px 0 15px 0;
 }
 
-.App-link {
-  color: #61dafb;
+.title-img {
+  border-radius: 12px;
+  height: auto;
+  max-width: 100%;
+  box-shadow: 20px 20px #2b474d, 40px 40px #263f44, 20px 20px rgba(0, 0, 0, 0.2), 40px 40px rgba(0, 0, 0, 0.2), 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 60px;
+  transition: 0.5s;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.title-img:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.title-img:active {
+  transform: scale(1.01);
+}
+
+#footer {
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+  padding: 1% 10%;
+  letter-spacing: 1px;
+}
+
+.footer-head {
+  letter-spacing: 2px;
+  padding-right: 30px;
+}
+
+.footer-item {
+  padding-right: 10px;
+  color: rgba(62, 56, 52, 0.71);
+  transition: 0.2s;
+}
+
+.footer-item:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/* Media Queries */
+
+@media (max-width: 650px) {
+  .test-head {
+    font-size: 25px !important;
+    padding: 0 !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .press-img {
+    width: 100px;
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    max-width: 300px;
+    margin-left: 18%;
+  }
+
+  .cta-head {
+    font-size: 23px;
+  }
+
+  .email-form {
+    margin: 5% 20%;
+  }
+
+  #footer {
+    font-size: 12px;
+  }
+
+  .footer-item {
+    padding-right: 7px;
+  }
+
+  .footer-head {
+    padding-right: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .email-input {
+    margin-bottom: 20px;
+    margin-right: 0;
   }
 }

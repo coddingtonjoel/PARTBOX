@@ -1,0 +1,59 @@
+#pricing {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.pricing-title {
+    font-weight: 700;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.pricing-subtitle {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.price-col {
+    margin-bottom: 60px;
+    font-size: 15px;
+    text-align: left;
+}
+
+.card {
+    min-height: 460px;
+    transition: 0.25s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-header {
+    text-align: center;
+}
+
+.intel-header {
+    background: #0071c5;
+}
+
+.card-footer {
+    text-align: center;
+}
+
+.plan {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+
+.price {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.card-body {
+    font-size: 14px;
+}
