@@ -5,57 +5,64 @@ import Features from "./components/Features/Features";
 import Testamonials from "./components/Testamonials/Testamonials";
 import Pricing from "./components/Pricing/Pricing";
 import Cta from "./components/CTA/CTA";
-import parts from "./images/parts.png";
-import Button from "@material-ui/core/Button"
+import Title from "./components/Title/Title";
+import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
+import About from "./components/Pages/About";
+import Parts from "./components/Pages/Parts";
+import Checkout from "./components/Pages/Checkout";
 
 function App() {
   return (
-    <Fragment>
+    <Router>
         <div className="container-fluid">
             <Navbar/>
-            <section id="title">
-                {/*Title*/}
-                <div className="row">
-                    <div className="col-lg-6 header-col">
-                        <h1 className="page-head section-head">Monthly PC Parts Delivered Right to Your Doorstep.</h1>
-                        <Button style={styles.login} className="login-btn" variant={"contained"}>Login</Button>
-                        <Button style={styles.signup} variant={"contained"} className="signup-btn">Sign Up</Button>
-                    </div>
-                    <div className="col-lg-6">
-                        <img className="title-img" src={parts} alt={""}/>
-                    </div>
-                </div>
-            </section>
         </div>
-        <Features/>
-        <Testamonials/>
-        <Pricing/>
-        <Cta/>
-       {/*Footer*/}
+        <Switch>
+            <Route exact path={"/"} render={props => (
+                <Fragment>
+                    <div className="container-fluid">
+                        <Title/>
+                    </div>
+                    <Features/>
+                    <Testamonials/>
+                    <Pricing/>
+                    <Cta/>
+                </Fragment>
+            )}/>
+            <Route exact path={"/about"} component={About}/>
+            <Route exact path={"/recent"} component={Parts}/>
+            <Route exact path={"/checkout/standard"} render={props => (
+                <Fragment>
+                    <Checkout plan={"standard"} price={"$49.99"}/>
+                </Fragment>
+            )}/>
+            <Route exact path={"/checkout/select"} render={props => (
+                <Fragment>
+                    <Checkout plan={"select"} price={"$79.99"}/>
+                </Fragment>
+            )}/>
+            <Route exact path={"/checkout/amd"} render={props => (
+                <Fragment>
+                    <Checkout plan={"amd"} price={"$119.99"}/>
+                </Fragment>
+            )}/>
+            <Route exact path={"/checkout/intel"} render={props => (
+                <Fragment>
+                    <Checkout plan={"intel"} price={"$129.99"}/>
+                </Fragment>
+            )}/>
+        </Switch>
 
+       {/*Footer*/}
         <footer id="footer" className="tan-bg">
             <span className="footer-head">© 2020 PARTBOX, Inc.</span>
-            <a className="footer-item" href="#">Terms</a>
-            <a className="footer-item" href="#">Privacy</a>
-            <a className="footer-item" href="#">Support</a>
-            <a className="footer-item" href="#">About</a>
+            <Link className="footer-item" to="#">Terms</Link>
+            <Link className="footer-item" to="#">Privacy</Link>
+            <Link className="footer-item" to="#">Support</Link>
+            <Link className="footer-item" to="/about">About</Link>
         </footer>
-    </Fragment>
+    </Router>
   );
-}
-
-const styles = {
-    login: {
-        padding: "5px 20px",
-        marginRight: "20px",
-        background: "#333",
-        color: "white"
-    },
-    signup: {
-        padding: "5px 20px",
-        background: "#283E59",
-        color: "white"
-    }
 };
 
 export default App;

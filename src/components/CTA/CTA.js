@@ -14,7 +14,7 @@ const Cta = () => {
                     <div>
                         <form method={"post"} className="form-group email-form">
                             <CssTextField type={"email"} style={styles.email} id="custom-css-standard-input" label="Email Address" />
-                                <Button style={styles.button} variant={"contained"} color={"dark"} className="btn-block email-button">Sign Up</Button>
+                                <Button style={styles.button} variant={"contained"} className="btn-block email-button">Sign Up</Button>
                         </form>
                     </div>
                 </div>
@@ -58,5 +58,4 @@ const styles = {
         color: "#FFF"
     }
 };
-
 export default Cta;
