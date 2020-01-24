@@ -6,4 +6,4 @@ Obviously, the available plans would not be suitable for the real world, nor wou
 
 Uses React, Bootstrap, and Material-UI.
 
-Hosted on GitHub Pages @ http://partbox.herokuapp.com/
+Hosted on Heroku @ http://partbox.herokuapp.com/
