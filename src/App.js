@@ -19,7 +19,7 @@ function App() {
             <Navbar/>
         </div>
         <Switch>
-            <Route exact path={"/"} render={props => (
+            <Route exact path={process.env.PUBLIC_URL + "/"} render={props => (
                 <Fragment>
                     <div className="container-fluid">
                         <Title/>
@@ -30,29 +30,29 @@ function App() {
                     <Cta/>
                 </Fragment>
             )}/>
-            <Route exact path={"/about"} component={About}/>
-            <Route exact path={"/recent"} component={Parts}/>
-            <Route exact path={"/checkout/standard"} render={props => (
+            <Route exact path={process.env.PUBLIC_URL + "/about"} component={About}/>
+            <Route exact path={process.env.PUBLIC_URL + "/recent"} component={Parts}/>
+            <Route exact path={process.env.PUBLIC_URL + "/checkout/standard"} render={props => (
                 <Fragment>
                     <Checkout plan={plans[0]} price={"$49.99"}/>
                 </Fragment>
             )}/>
-            <Route exact path={"/checkout/select"} render={props => (
+            <Route exact path={process.env.PUBLIC_URL + "/checkout/select"} render={props => (
                 <Fragment>
                     <Checkout plan={plans[1]} price={"$79.99"}/>
                 </Fragment>
             )}/>
-            <Route exact path={"/checkout/amd"} render={props => (
+            <Route exact path={process.env.PUBLIC_URL + "/checkout/amd"} render={props => (
                 <Fragment>
                     <Checkout plan={plans[2]} price={"$119.99"}/>
                 </Fragment>
             )}/>
-            <Route exact path={"/checkout/intel"} render={props => (
+            <Route exact path={process.env.PUBLIC_URL + "/checkout/intel"} render={props => (
                 <Fragment>
                     <Checkout plan={plans[3]} price={"$129.99"}/>
                 </Fragment>
             )}/>
-            <Route exact path={"/demo/end"} component={Demo}/>
+            <Route exact path={process.env.PUBLIC_URL + "/demo/end"} component={Demo}/>
         </Switch>
 
        {/*Footer*/}
@@ -61,7 +61,7 @@ function App() {
             <Link className="footer-item" to="#">Terms</Link>
             <Link className="footer-item" to="#">Privacy</Link>
             <Link className="footer-item" to="#">Support</Link>
-            <Link className="footer-item" to="/about">About</Link>
+            <Link className="footer-item" to={process.env.PUBLIC_URL + "/about"}>About</Link>
         </footer>
     </Router>
   );

@@ -3,15 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="61027bbd-a19b-4a45-bc19-4bf3af9747f2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Logindialog/Logindialog.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/Navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pages/Checkout.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Checkout.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pages/Checkout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Checkout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Pricing/Pricing.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pricing/Pricing.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/About.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/About.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pages/Parts.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pages/Parts.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Pricing/Plan.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Pricing/Plan.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Title/Title.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Title/Title.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -106,6 +104,8 @@
       <workItem from="1579835295929" duration="3318000" />
       <workItem from="1579839209512" duration="5000" />
       <workItem from="1579842636111" duration="6762000" />
+      <workItem from="1579850167387" duration="750000" />
+      <workItem from="1579896740523" duration="1363000" />
     </task>
     <servers />
   </component>
@@ -121,22 +121,22 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="184" y="123" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1440.877@0.23.1440.877" timestamp="1579638438900" />
-    <state width="1419" height="191" key="GridCell.Tab.0.bottom" timestamp="1579849409417">
+    <state width="1419" height="191" key="GridCell.Tab.0.bottom" timestamp="1579897492174">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1419" height="191" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1579849409417" />
-    <state width="1419" height="191" key="GridCell.Tab.0.center" timestamp="1579849409416">
+    <state width="1419" height="191" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1579897492174" />
+    <state width="1419" height="191" key="GridCell.Tab.0.center" timestamp="1579897492174">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1419" height="191" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1579849409416" />
-    <state width="1419" height="191" key="GridCell.Tab.0.left" timestamp="1579849409415">
+    <state width="1419" height="191" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1579897492174" />
+    <state width="1419" height="191" key="GridCell.Tab.0.left" timestamp="1579897492173">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1419" height="191" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1579849409415" />
-    <state width="1419" height="191" key="GridCell.Tab.0.right" timestamp="1579849409416">
+    <state width="1419" height="191" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1579897492173" />
+    <state width="1419" height="191" key="GridCell.Tab.0.right" timestamp="1579897492174">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1419" height="191" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1579849409416" />
+    <state width="1419" height="191" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1579897492174" />
     <state x="221" y="100" key="SettingsEditor" timestamp="1579664252991">
       <screen x="0" y="23" width="1440" height="877" />
     </state>

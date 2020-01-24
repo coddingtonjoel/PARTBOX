@@ -4,7 +4,7 @@ import "./Parts.css";
 const Parts = (props) => {
     return (
         <div>
-            HI
+            WIP
         </div>
     )
 };

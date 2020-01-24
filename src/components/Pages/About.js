@@ -4,7 +4,7 @@ import "./About.css";
 const About = (props) => {
     return (
         <Fragment>
-            <h1>About Page</h1>
+            <h1>About Page [WIP]</h1>
         </Fragment>
     )
 };

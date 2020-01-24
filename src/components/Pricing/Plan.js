@@ -30,7 +30,7 @@ const Plan = (props) => {
                         <Button style={styles.plan}
                                 variant={"contained"}
                                 className={"btn-block"}
-                                href={`/checkout/${props.button}`}>
+                                href={process.env.PUBLIC_URL + `/checkout/${props.button}`}>
                             Select Plan
                         </Button>
                     </div>

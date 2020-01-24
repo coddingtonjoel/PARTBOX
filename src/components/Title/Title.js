@@ -1,4 +1,4 @@
-import React, {Fragment, useState} from 'react';
+import React, {Fragment} from 'react';
 import Button from "@material-ui/core/Button";
 import parts from "../../images/parts.png";
 import "./Title.css"
@@ -7,8 +7,6 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import TextField from "@material-ui/core/TextField";
 import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
-import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
-import Demo from "../Pages/Demo";
 
 const Title = () => {
     const [open, setOpen] = React.useState(false);
@@ -29,7 +27,7 @@ const Title = () => {
                         <h1 className="page-head section-head">Monthly PC Parts Delivered Right to Your Doorstep.</h1>
                         <Button onClick={handleClickOpen} style={styles.login} className="login-btn" variant={"contained"}>Login</Button>
                         <Button onClick={handleClickOpen} style={styles.signup} variant={"contained"} className="signup-btn">Sign Up</Button>
-                        <Button style={styles.parts} variant={"contained"} href="/recent" className={"parts-btn"}>View Recent Boxes</Button>
+                        <Button style={styles.parts} variant={"contained"} href={process.env.PUBLIC_URL + "/recent"} className={"parts-btn"}>View Recent Boxes</Button>
                     </div>
                     <div className="col-lg-6">
                         <img className="title-img" src={parts} alt={""}/>
@@ -60,7 +58,7 @@ const Title = () => {
                     <Button onClick={handleClose} color="primary">
                         Cancel
                     </Button>
-                    <Button href={"/demo/end"} color="primary">
+                    <Button href={process.env.PUBLIC_URL + "/demo/end"} color="primary">
                         Login
                     </Button>
                 </DialogActions>

@@ -17,13 +17,13 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ml-auto">
                             <li className="nav-item">
-                                <Button style={styles.item} className={"nav-item"} href="/#pricing">Pricing</Button>
+                                <Button style={styles.item} className={"nav-item"} href={process.env.PUBLIC_URL + "/#pricing"}>Pricing</Button>
                             </li>
                             <li className="nav-item">
                                 <Button style={styles.item} className="nav-link" href={"#"}>Contact</Button>
                             </li>
                             <li className="nav-item">
-                                <Button style={styles.item} className="nav-link" href={"/about"}>About</Button>
+                                <Button style={styles.item} className="nav-link" href={process.env.PUBLIC_URL + "/about"}>About</Button>
                             </li>
                         </ul>
                     </div>
