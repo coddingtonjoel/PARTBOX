@@ -1,0 +1,13 @@
+.demo-container {
+    background: #015668;
+}
+
+.demo-end {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    padding: 10% 0 20% 0;
+    margin-bottom: 0;
+    text-align: center;
+    font-weight: 700;
+}

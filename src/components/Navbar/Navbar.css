@@ -1,5 +1,6 @@
 #navbar {
     margin: 0 6% 0 5%;
+    padding-bottom: 2%;
 }
 
 .navbar-toggler {
@@ -28,6 +29,7 @@
 
 .nav-item {
     padding-right: 20px;
+    padding-top: 22px;
 }
 
 .nav-link {
@@ -39,4 +41,10 @@
 .fa-desktop {
     margin-left: 12px;
     margin-top: 1px;
+}
+
+@media (max-width: 767px) {
+    #navbar {
+        padding-bottom: 5%;
+    }
 }

@@ -10,6 +10,7 @@ import {BrowserRouter as Router, Switch, Route, Link} from "react-router-dom";
 import About from "./components/Pages/About";
 import Parts from "./components/Pages/Parts";
 import Checkout from "./components/Pages/Checkout";
+import Demo from "./components/Pages/Demo";
 
 function App() {
   return (
@@ -25,7 +26,7 @@ function App() {
                     </div>
                     <Features/>
                     <Testamonials/>
-                    <Pricing/>
+                    <Pricing plans={plans}/>
                     <Cta/>
                 </Fragment>
             )}/>
@@ -33,24 +34,25 @@ function App() {
             <Route exact path={"/recent"} component={Parts}/>
             <Route exact path={"/checkout/standard"} render={props => (
                 <Fragment>
-                    <Checkout plan={"standard"} price={"$49.99"}/>
+                    <Checkout plan={plans[0]} price={"$49.99"}/>
                 </Fragment>
             )}/>
             <Route exact path={"/checkout/select"} render={props => (
                 <Fragment>
-                    <Checkout plan={"select"} price={"$79.99"}/>
+                    <Checkout plan={plans[1]} price={"$79.99"}/>
                 </Fragment>
             )}/>
             <Route exact path={"/checkout/amd"} render={props => (
                 <Fragment>
-                    <Checkout plan={"amd"} price={"$119.99"}/>
+                    <Checkout plan={plans[2]} price={"$119.99"}/>
                 </Fragment>
             )}/>
             <Route exact path={"/checkout/intel"} render={props => (
                 <Fragment>
-                    <Checkout plan={"intel"} price={"$129.99"}/>
+                    <Checkout plan={plans[3]} price={"$129.99"}/>
                 </Fragment>
             )}/>
+            <Route exact path={"/demo/end"} component={Demo}/>
         </Switch>
 
        {/*Footer*/}
@@ -63,6 +65,62 @@ function App() {
         </footer>
     </Router>
   );
-};
+}
+
+const plans = [
+    {
+        plan: "PARTBOX STANDARD",
+        price: "$49.99 / mo.",
+        features: [
+            "-a PSU (Power Supply Unit)",
+            "-a PC fan\n-a PCIe item",
+            "-an internal drive of varying size",
+            "-Newegg coupons for randomly selected GPUs and CPUs",
+        ],
+        bkg: "#eceeef",
+        color: "#000",
+        key: "standard"
+    },
+    {
+        plan: "PARTBOX SELECT",
+        price: "$79.99 / mo.",
+        features: [
+            "-a mechanical keyboard",
+            "-a 1920x1080 monitor",
+            "-a selected external device",
+            "-a PCIe item",
+            "-Newegg coupons for randomly selected GPUs and CPUs"
+        ],
+        bkg: "#5a626a",
+        color: "#fff",
+        key: "select"
+    },
+    {
+        plan: "PARTBOX AMD",
+        price: "$119.99 / mo.",
+        features: [
+            "-a PCIe item",
+            "-AMD Ryzen 7 CPU",
+            "-an internal drive of varying size",
+            "-Newegg coupons for randomly selected GPUs"
+        ],
+        bkg: "#cb3737",
+        color: "#fff",
+        key: "amd"
+    },
+    {
+        plan: "PARTBOX INTEL",
+        price: "$129.99 / mo.",
+        features: [
+            "-a PCIe item",
+            "-Intel i3 9000s Series CPU or i5 8000s Series CPU",
+            "-an internal drive of varying size",
+            "-Newegg coupons for randomly selected GPUs"
+        ],
+        bkg: "#0071c5",
+        color: "#fff",
+        key: "intel"
+    }
+];
 
 export default App;

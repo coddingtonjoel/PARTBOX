@@ -1,0 +1,107 @@
+.checkout-container {
+    background: #263f44;
+    color: #fff;
+    padding: 3%;
+}
+
+.checkout-head {
+    text-align: center;
+    font-family: 'Monda', sans-serif;
+    width: auto;
+    display: inline-block;
+    padding: 1% 0 1% 0;
+    border-radius: 10px;
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 1px 1px #111;
+}
+
+.divider {
+    border: 5px solid #444;
+    opacity: 40%;
+}
+
+.billing-form {
+    width: 50%;
+    margin-right: 42%;
+}
+
+.first-name {
+    margin-top: 10px;
+    width: 40%;
+    display: inline-block;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.last-name {
+    width: 48%;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.address-name {
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.etc-name {
+    margin-bottom: 10px;
+    width: 90%;
+}
+
+.city-name {
+    width: 39%;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.state-name {
+    width: 20%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.zipcode {
+    width: 28%;
+    display: inline-block
+}
+
+Button.continue-button {
+    margin-top: 5px;
+}
+
+@media (max-width: 991px) {
+    .billing-form {
+        width: 100%;
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 767px) {
+    .checkout-container {
+        text-align: center;
+    }
+
+    .billing-form {
+        width: 100%;
+        margin: auto;
+    }
+
+    .address-name {
+        margin-left: 4%;
+    }
+
+    .etc-name {
+        margin-left: 4%;
+    }
+
+    .city-name {
+        width: 43%;
+    }
+
+    .zipcode {
+        width: 22%;
+    }
+}
