@@ -1,87 +1,87 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .section-head {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 .yellow-bg {
-  background: #ffd369;
+    background: #ffd369;
 }
 
 .tan-bg {
-  background: #fff1cf;
+    background: #fff1cf;
 }
 
 /* Footer */
 
 #footer {
-  text-align: center;
-  font-family: 'Ubuntu', sans-serif;
-  padding: 1% 10%;
-  letter-spacing: 1px;
+    text-align: center;
+    font-family: "Ubuntu", sans-serif;
+    padding: 1% 10%;
+    letter-spacing: 1px;
 }
 
 .footer-head {
-  letter-spacing: 2px;
-  padding-right: 30px;
+    letter-spacing: 2px;
+    padding-right: 30px;
 }
 
 .footer-item {
-  padding-right: 10px;
-  color: rgba(62, 56, 52, 0.71);
-  transition: 0.2s;
+    padding-right: 10px;
+    color: rgba(62, 56, 52, 0.71);
+    transition: 0.2s;
 }
 
 .footer-item:hover {
-  color: black;
-  text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 
 /* Media Queries */
 
 @media (max-width: 650px) {
-  .test-head {
-    font-size: 25px !important;
-    padding: 0 !important;
-  }
+    .test-head {
+        font-size: 25px !important;
+        padding: 0 !important;
+    }
 
-  .press-img {
-    width: 100px;
-  }
+    .press-img {
+        width: 100px;
+    }
 }
 
 @media (max-width: 767px) {
-  .card {
-    max-width: 300px;
-    margin-left: 18%;
-  }
+    .card {
+        max-width: 300px;
+        margin-left: 18%;
+    }
 
-  .cta-head {
-    font-size: 23px;
-  }
+    .cta-head {
+        font-size: 23px;
+    }
 
-  .email-form {
-    margin: 5% 20%;
-  }
+    .email-form {
+        margin: 5% 20%;
+    }
 
-  #footer {
-    font-size: 12px;
-  }
+    #footer {
+        font-size: 12px;
+    }
 
-  .footer-item {
-    padding-right: 7px;
-  }
+    .footer-item {
+        padding-right: 7px;
+    }
 
-  .footer-head {
-    padding-right: 10px;
-  }
+    .footer-head {
+        padding-right: 10px;
+    }
 }
 
 @media (max-width: 575px) {
-  .email-input {
-    margin-bottom: 20px;
-    margin-right: 0;
-  }
+    .email-input {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
 }

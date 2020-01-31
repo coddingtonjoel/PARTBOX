@@ -1,0 +1,40 @@
+.about-container {
+    background: #015668;
+    color: white;
+    padding: 4% 10%;
+    line-height: 2;
+}
+
+.about-head {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    padding: 0 10% 4% 10%;
+}
+
+.about-body {
+    font-size: 1.1rem;
+}
+
+.about-body-foot {
+    text-align: center;
+    font-size: 0.9rem;
+    padding-top: 20px;
+}
+
+.github-link {
+    margin-left: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+.github-link:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.github-button-container {
+    margin-top: 40px;
+    text-align: center;
+    color: white !important;
+}
