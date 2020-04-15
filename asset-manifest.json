@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/partbox/static/css/main.52aeccb3.chunk.css",
+    "main.js": "/partbox/static/js/main.1146a2e7.chunk.js",
+    "main.js.map": "/partbox/static/js/main.1146a2e7.chunk.js.map",
+    "runtime-main.js": "/partbox/static/js/runtime-main.08079536.js",
+    "runtime-main.js.map": "/partbox/static/js/runtime-main.08079536.js.map",
+    "static/js/2.bc75f91b.chunk.js": "/partbox/static/js/2.bc75f91b.chunk.js",
+    "static/js/2.bc75f91b.chunk.js.map": "/partbox/static/js/2.bc75f91b.chunk.js.map",
+    "index.html": "/partbox/index.html",
+    "precache-manifest.d22a32c8bb0cbb83f368f0ff5eb4072b.js": "/partbox/precache-manifest.d22a32c8bb0cbb83f368f0ff5eb4072b.js",
+    "service-worker.js": "/partbox/service-worker.js",
+    "static/css/main.52aeccb3.chunk.css.map": "/partbox/static/css/main.52aeccb3.chunk.css.map",
+    "static/js/2.bc75f91b.chunk.js.LICENSE": "/partbox/static/js/2.bc75f91b.chunk.js.LICENSE",
+    "static/media/amd.png": "/partbox/static/media/amd.50d166fa.png",
+    "static/media/corsair.png": "/partbox/static/media/corsair.e1c3a1d4.png",
+    "static/media/hyperx.png": "/partbox/static/media/hyperx.702e79b3.png",
+    "static/media/intel.png": "/partbox/static/media/intel.82bc3976.png",
+    "static/media/newegg.png": "/partbox/static/media/newegg.b1152346.png",
+    "static/media/nvidia.png": "/partbox/static/media/nvidia.550652fe.png",
+    "static/media/parts.png": "/partbox/static/media/parts.99c60655.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.08079536.js",
+    "static/js/2.bc75f91b.chunk.js",
+    "static/css/main.52aeccb3.chunk.css",
+    "static/js/main.1146a2e7.chunk.js"
+  ]
+}
